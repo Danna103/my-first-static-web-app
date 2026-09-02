@@ -26,9 +26,9 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_HILL_09D2F0710 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"
-          api_location: ""
-          output_location: "/"
+          app_location: "/src" # Carpeta donde está tu código fuente y el index.html
+          api_location: "" # Déjalo vacío
+          output_location: "/src" # Carpeta donde se encuentran los archivos estáticos listos para desplegar
           skip_app_build: true
 
   close_pull_request_job:

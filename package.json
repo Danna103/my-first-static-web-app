@@ -5,3 +5,4 @@
     "start": "sirv ./src public --cors --single --no-clear --port 8000"
   }
 }
+
